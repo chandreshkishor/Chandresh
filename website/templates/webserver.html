@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="row">
+    <div class="col-md-4 text-center">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>What Is Web Server ?</h3>
+            </div>
+            <div class="flip-card-back tex-dark">
+              <div>
+              	<p><b>Web Server: </b> Web server is a program which processes the network requests of the users and serves them with files that create web pages. This exchange takes place using Hypertext Transfer Protocol (HTTP).</p>
+              	<p><b>Example: </b>Apache, Tomcat and Resin </p>
+              </div>
+              <div class="px-1">
+              	<img src="{{url_for('static', filename='webserver.PNG')}}"  style="width: 95%;" alt="webserver.PNG">
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-4 text-center">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>How Web servers work?</h3>
+            </div>
+            <div class="flip-card-back tex-dark">
+              <div>
+              	<p>A page on internet can be viewed, when the browser requests it from the web server and the web server responds with that page. A simple diagrammatic representation of this is as given below in the figure:</p>
+              </div>
+              <div  style="align-content: center;">
+              	<div style="width: 80%; max-height: 60%;">
+              		<img src="{{url_for('static', filename='Web_Servers_work_1.PNG')}}"  style="width: 80%;" alt="webserver.PNG">
+              	</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-4 text-center">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>Important points</h3>
+            </div>
+            <div class="flip-card-back tex-dark text-justify">
+              <div>
+              		<b>If the requested web page at the client side is not found, then web server will sends the HTTP response:</b>
+              		<ul>
+              			<li> Error 404 Not found. </li>
+              			<li>When the web server searching the requested page if requested page is found then it will send to the client with an HTTP response.</li>
+              			<li>If the client requests some other resources then web server will contact to application server and data is store for constructing the HTTP response.</li>
+              		</ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
